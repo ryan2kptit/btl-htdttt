@@ -12,7 +12,7 @@ async function bootstrap() {
   //   forbidUnknownValues: true,
   // };
 
-  //app.useGlobalPipes(new ValidationPipe());
+  app.useGlobalPipes(new ValidationPipe());
   app.setGlobalPrefix('api');
   app.enableCors();
   app.use(cookieParser());
